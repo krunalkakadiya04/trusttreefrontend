@@ -1,0 +1,60 @@
+image: node:latest
+
+stages:
+  - env
+  - deps
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+.install_pkgs: &install_pkgs |
+  apt-get update -y && apt-get -y install rsync
+
+.handle_connection: &handle_connection |
+  which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+  mkdir -p ~/.ssh
+  eval $(ssh-agent -s)
+  [[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+
+.connect: &connect |
+  ssh-add <(echo "$DO_SSH_PRIVATE_KEY") &&
+  ssh -o StrictHostKeyChecking=no "$WEB_SERVER_USER"@"$WEB_SERVER_IP"
+
+env:
+  image: node:latest
+  stage: env
+  rules:
+    - if: $CI_COMMIT_BRANCH == "dev"
+  script:
+    - echo -e "SKIP_PREFLIGHT_CHECK=true\nREACT_APP_ENV=$REACT_APP_ENV\nREACT_APP_BASE_URL=$REACT_APP_BASE_URL\nREACT_APP_FRONTEND_PANEL_URL=$REACT_APP_FRONTEND_PANEL_URL" > .env.development
+  artifacts:
+    paths:
+      - .env.development
+
+deps-dev:
+  image: node:latest
+  stage: deps
+  rules:
+    - if: $CI_COMMIT_BRANCH == "dev"
+  script:
+    - npm i --legacy-peer-deps
+    - cat .env.development && npm i --legacy-peer-deps && CI=false npm run build:dev
+  artifacts:
+    paths:
+      - build
+
+staging-frontend:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == "dev"
+  before_script:
+    - *install_pkgs
+    - *handle_connection
+  script:
+    - *connect
+    - rsync -rav --exclude 'node_modules' --exclude 'package-lock.json' --delete /builds/tarbeeta/trusttreefrontend/build/ "$WEB_SERVER_USER"@"$WEB_SERVER_IP":"$DEV_SERVER_PATH/" --rsync-path="sudo rsync"
+  environment:
+    name: "development"
+    url: "https://app.trustree.com/"

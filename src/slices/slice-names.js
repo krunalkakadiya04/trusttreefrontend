@@ -1,0 +1,16 @@
+export const AUTH_SLICE = "auth";
+export const USERS = "users";
+export const BRANDS = "brands";
+export const BRANCHES = "brands/branches";
+export const EXPERIENCE = "brands/experience-type";
+export const STAFF_MEMBERS = "brands/staff-members";
+export const SOCIAL_MEDIA = "brands/social-media";
+export const RATINGS = "brands/ratings";
+export const REWARDS = "brands/rewards";
+export const BRAND_DESIGN = "brands/design";
+export const CATALOGUE = "brands/catalogue";
+export const PRODUCT_CATALOGUE = "brands/pro-catalogue";
+export const SERVICE_CATALOGUE = "brands/service-catalogue";
+export const QUESTIONS = "surveys";
+export const FEEDBACKS = "brands/feedbacks";
+export const CUSTOMER = "brands/customer-feedback";

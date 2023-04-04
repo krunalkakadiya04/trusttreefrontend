@@ -1,0 +1,754 @@
+:root {
+  --primary: #164665;
+  --primaryHover: rgba(0, 0, 0, 0.25);
+  --primaryBG-8: rgba(22, 70, 101, 0.08);
+  --primaryBG-10: rgba(22, 70, 101, 0.1);
+  --primaryGrey: #a2b5c1;
+  --orangeColor: #fd6919;
+  --redColor: #ed1c24;
+  --lightGreen: #30f100;
+  --darkColor: #292d32;
+  --greyColor: #909090;
+  --white: #fff;
+  --bdrColor: rgba(169, 208, 246, 0.75);
+  --boxShadow: 0px 1px 2px rgba(169, 208, 246, 0.25);
+  --Radius12: 12px;
+  --Radius8: 8px;
+  --Radius6: 6px;
+  --Radius4: 4px;
+
+  /* Width Variable */
+  --width120: 120px;
+  --width200: 200px;
+
+  /* Fonts Variable */
+  --font28: 28px;
+  --font20: 20px;
+  --font18: 18px;
+  --font16: 16px;
+  --font14: 14px;
+  --font12: 12px;
+  --weight200: 200;
+  --weight300: 300;
+  --weight400: 400;
+  --weight500: 500;
+  --weight600: 600;
+  --weight700: 700;
+  --weight800: 800;
+  --weight900: 900;
+  --weight1000: 1000;
+
+  /* Lable color */
+  --labelPurpleBG: rgba(148, 119, 171, 0.15);
+  --labelBlueBG: rgba(0, 156, 248, 0.15);
+  --labelYellowBG: rgba(299, 157, 35, 0.15);
+  --labelGreenBG: rgba(43, 188, 145, 0.15);
+
+  --labelPurpleColor: rgba(148, 119, 171, 1);
+  /* --labelBlueColor: rgba(0, 156, 248, 1); */
+  --labelYellowColor: rgba(299, 157, 35, 1);
+  --labelGreenColor: rgba(43, 188, 145, 1);
+}
+
+
+:focus,
+:focus-visible,
+.form-select:focus {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+
+@media(max-width:1366px) {
+  body .Wrapper {
+    padding: 30px 30px 30px 290px;
+  }
+
+  body .Logo {
+    padding: 26px 0 27px 0;
+  }
+
+  body .contentHead {
+    padding: 0 0 20px;
+  }
+
+  body .sidebarContent {
+    width: 260px;
+  }
+
+  body .navBar {
+    height: calc(100vh - 90px);
+  }
+
+  body .navBar>.navDIV {
+    height: calc(100vh - 182px);
+  }
+
+  body .navBar>.navDIV ul.navUL>li+li {
+    padding-top: 6px;
+  }
+
+  body .navBar>.navDIV ul.navUL>li a,
+  body .navBar>.navDIV ul.navUL>li .dropdown-Link {
+    padding: 9px 12px;
+    font-size: var(--font14);
+    border-radius: 6px;
+  }
+
+  body .FilterBox {
+    margin: 0 0 1.5rem;
+    border-radius: 6px;
+    padding: 5px 5px;
+  }
+
+  body .datepicker input.form-control,
+  body .customSelect select.selectpicker {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  body .multiBoxes {
+    margin: 0 0 1.5rem;
+  }
+
+  body .multiBoxesDiv {
+    padding: 10px 10px 10px 70px;
+    min-height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  body .multiBoxesDiv span {
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  body .multiBoxesDiv span img {
+    width: 30px;
+  }
+
+  body .multiBoxesDiv h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 17px;
+    line-height: 1.25;
+  }
+
+  body .multiBoxesDiv p {
+    line-height: 1.25;
+  }
+
+  body .box {
+    padding: 0;
+    margin: 0 0 1.5rem;
+  }
+
+  body .box h2 {
+    margin: 0 0 1.5rem;
+  }
+
+  body .PerformanceGraph {
+    overflow: auto;
+  }
+
+  body .table thead th {
+    white-space: nowrap;
+  }
+
+  body .contentHead .btnIconDashBDR {
+    height: 40px;
+  }
+
+  body .btnIconDashBDR {
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  body .btnIconDashBDR em img {
+    width: 20px;
+  }
+
+  body .contentHead h1 {
+    font-size: 24px;
+    margin: 0;
+    width: auto;
+  }
+
+  body .box h2 {
+    font-size: 18px;
+  }
+
+  body .table thead th:last-child {
+    border-radius: 0 6px 6px 0;
+  }
+
+  body .table thead th:first-child {
+    border-radius: 6px 0 0 6px;
+  }
+
+  body .feedbacksLable ul li {
+    padding: 8px;
+  }
+
+  body .feedbacksLable ul,
+  body .inputWrap input,
+  body .feedbackUsers,
+  body .feedbackRight,
+  body .nav-tabs .nav-link.active,
+  body .brandInfo,
+  body .brandFilter button,
+  body .dropdown-menu,
+  body .feedbacksLable ul li.active {
+    border-radius: 6px;
+  }
+
+  body .brandAccordion.accordion>.card>.card-header {
+    padding: 10px;
+  }
+
+  body .card-body {
+    padding: 10px;
+  }
+
+  body .modal-content {
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  body .dropdown-menu li a {
+    padding: 8px 10px;
+  }
+
+  body .modal-header {
+    padding: 0 0 1.5rem;
+  }
+
+  body .inputWrap label {
+    margin: 0 0 4px;
+  }
+
+  body .Experience-btn-modal {
+    margin-top: 2rem;
+  }
+
+  body .h4,
+  body h4 {
+    font-size: calc(1.25rem + .0vw);
+  }
+
+  body .Experience-btn-modal .edit-data,
+  body .Cancel-passwor {
+    border-radius: 6px;
+    padding: 9px 40px;
+  }
+
+  body button.send-modal {
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  body .modalAddBranch .modal-dialog {
+    padding: 0 20px;
+  }
+
+  body .brandTable {
+    overflow: auto;
+  }
+
+  body .ellipsis button {
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  body .experience-inner-content.input-box-profile {
+    border-radius: 6px;
+  }
+
+  body .input-box-profile {
+    border-radius: 6px;
+  }
+
+  body .dropdown-menu ul li:first-child a {
+    border-radius: 6px 6px 0 0;
+  }
+
+  body .dropdown-menu ul li:last-child a {
+    border-radius: 0 0 6px 6px;
+  }
+
+  body .tab_cstm_wrapper {
+    width: calc(100% - 260px);
+  }
+
+  body .brand-mobile-phone {
+    max-width: 270px;
+  }
+
+  body .form-select {
+    padding: 9px 32px 9px 12px;
+    border-radius: 6px;
+  }
+
+  /* body div{padding:0 8px; border-radius:6px;} */
+  body .form-switch {
+    padding: 9px 10px 9px 45px;
+  }
+
+  body .form-control-color {
+    height: 40px;
+  }
+
+  body .button-color {
+    height: 40px;
+  }
+
+  body .btn {
+    padding: 9px 20px;
+    border-radius: 6px;
+  }
+
+  body .resend-invitation {
+    padding: 9px 12px;
+    border-radius: 20px;
+  }
+
+  body .btn.close_btn {
+    padding: 0;
+  }
+
+  body .btn.btnIcon {
+    padding: 8px 20px;
+    border-radius: 6px;
+  }
+
+  body .staff-wrp {
+    padding: 1rem 0px 1rem 0px;
+  }
+
+  body .form-control {
+    padding: 4px 12px;
+    border-radius: 6px;
+  }
+
+  body .customSelect .dropdown-toggle,
+  body .ellipsisDrop button {
+    border-radius: 6px;
+  }
+
+  body .dropdown-menu span:last-child {
+    border-radius: 0 0 6px 6px;
+  }
+
+  body .dropdown-menu span:first-child {
+    border-radius: 6px 6px 0 0;
+  }
+
+  body div .input-box-profile {
+    padding: 7px 10px;
+    align-items: center;
+    text-overflow: ellipsis;
+  }
+
+  body .tab_panel_new {
+    border-radius: 6px;
+  }
+
+  body .nav-tabs .nav-link {
+    padding: 8px 11px;
+    width: 100%;
+  }
+
+  body .dropdown-menu li:first-child a {
+    border-radius: 6px 6px 0 0;
+  }
+
+  body .dropdown-menu li:last-child a {
+    border-radius: 0 0 6px 6px;
+  }
+
+  body .form-control.css-b62m3t-container {
+    padding: 0 8px;
+  }
+
+  body .react-select__control .react-select__value-container {
+    padding: 0;
+  }
+}
+
+@media(max-width:1099px) {
+  body .navBar {
+    display: none;
+  }
+
+  body .Logo {
+    padding: 0;
+  }
+
+  body .sidebarContent {
+    width: 100%;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-bottom: 1px solid #a9d0f6bf;
+  }
+
+  body .Wrapper {
+    padding: 90px 20px 20px 20px;
+  }
+
+  body .contentHead {
+    margin: 0;
+  }
+
+  body .multiBoxes ul li {
+    width: 25%;
+    margin: 0;
+  }
+
+  body .multiBoxes ul {
+    margin: 0 -10px;
+  }
+
+  body .brandInfo {
+    margin-bottom: 1rem;
+  }
+
+  body .modal.show .modal-dialog {
+    max-width: 767px;
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+
+  body button.btn-close {
+    background-size: 12px auto;
+  }
+}
+
+@media(max-width:1024px) {
+  body .brandTitle strong {
+    font-size: 14px;
+  }
+
+  body .modal-header {
+    padding: 0 0 1rem;
+  }
+
+  body .inputWrap label {
+    font-size: 14px;
+  }
+}
+
+@media(max-width:991px) {
+  body .tab_cstm_wrapper {
+    width: 100%;
+  }
+
+  body .categoriesRatingBox {
+    overflow: scroll;
+  }
+
+  body .profile-box {
+    max-width: 350px;
+    margin-top: 35px;
+  }
+
+  body .profile-btn {
+    padding: 30px 0px 30px 0px;
+    margin: 0 auto;
+  }
+
+  body .profile {
+    width: 150px;
+    margin: 0 auto;
+    height: 150px;
+  }
+
+  body .profile-inner .profile-name {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  body .profile-form {
+    padding: 30px 15px;
+  }
+
+  body .profile-form h3 {
+    padding: 0px 0 30px 0;
+  }
+
+  body .social-buuton {
+    margin-top: 50px;
+  }
+
+  body .social-buuton button {
+    margin: 0 auto;
+  }
+
+  body .button-color {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media(max-width:767px) {
+  body .FilterBox {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  body .FilterBox>ul>li {
+    padding: 0 10px 0 0;
+    border-color: #a9d0f6bf;
+  }
+
+  body .datepicker input.form-control {
+    border: 0;
+    padding: 10px 30px 10px 3px;
+  }
+
+  body .multiBoxes ul {
+    margin: 0;
+  }
+
+  body .multiBoxes ul li {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  body .multiBoxesDiv span {
+    width: 40px;
+    height: 40px;
+  }
+
+  body .multiBoxesDiv {
+    min-height: 60px;
+    padding-left: 60px;
+  }
+
+  body .equalHeight .box {
+    height: inherit;
+  }
+
+  body .box {
+    margin: 0 0 15px;
+  }
+
+  body ul.SuggestionsUL li .SuggestionsBox {
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  body .FilterBox .customSelect select.selectpicker {
+    padding: 8px 10px 7px;
+  }
+
+  body .datepicker.datepIcon {
+    padding: 0 10px;
+  }
+
+  body ul.SuggestionsUL li .SuggestionsBox p {
+    line-height: 1.25;
+  }
+
+  body .contentHead {
+    margin: 0;
+    display: block;
+  }
+
+  body .contentHead .customSelect {
+    min-width: 100%;
+    padding: 0;
+    order: 3;
+  }
+
+  body .btnIconDashBDR {
+    margin-left: auto !important;
+  }
+
+  body .contentHead .customSelect {
+    margin: 1rem 0;
+  }
+
+  body .feedbackBody {
+    display: block;
+  }
+
+  body .feedbackRight,
+  body .feedbackLeft {
+    width: 100%;
+  }
+
+  body .feedbackLeft {
+    margin-bottom: 1.5rem;
+  }
+
+  body .brandInfo {
+    padding: 0;
+    overflow: auto;
+  }
+
+  body .brandInfo ul {
+    min-width: 600px;
+  }
+
+  body .brandInfo ul li {
+    width: auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  body .brandInfo ul li span {
+    line-height: 1;
+  }
+
+  body .modalAddBranchRight,
+  body .modalAddBranchLeft {
+    max-width: 100%;
+  }
+
+  body .inputWrap .customSelect {
+    padding-right: 0;
+  }
+
+  body .inputWrap .container {
+    max-width: 100%;
+  }
+
+  body .Experience-btn-modal .edit-data,
+  body .Cancel-passwor,
+  body .Cancel-passwor {
+    padding: 9px 30px;
+  }
+
+  body .brandTitle span {
+    margin: 0 5px 0 0;
+  }
+
+  body .brandTitle strong {
+    font-size: 13px;
+  }
+
+  body .brandImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  body .brandIcons span {
+    margin-left: 10px;
+  }
+
+  body .brandTitle {
+    margin: 0 10px 0 0;
+  }
+
+  body .reviewDisplay span {
+    font-size: 13px;
+  }
+
+  body .tab_panel_new {
+    overflow: hidden;
+    overflow-x: auto;
+    flex-wrap: inherit;
+  }
+
+  body .nav-tabs .nav-link {
+    white-space: nowrap;
+  }
+
+  body .experience-wpr-content {
+    margin-top: 1rem;
+  }
+
+  body .experience-wpr-content .container {
+    max-width: 100%;
+  }
+
+  body .modalAddBranchRight {
+    margin-bottom: 2rem;
+  }
+
+  body .ratings-content {
+    width: 100%;
+  }
+
+  body .ratings-form {
+    margin: 1.5rem auto;
+  }
+
+  body .input-social-media input {
+    width: 100%;
+  }
+
+  body .branches-inner {
+    max-width: 100%;
+  }
+
+  body .Experience-btn-modal {
+    margin-top: 1rem;
+  }
+
+  body .feedbackSearch {
+    margin: 0 0 1rem;
+  }
+
+  body .brandFilter {
+    margin: 0 auto;
+  }
+
+  body .newUserForm.mb-0 {
+    display: none;
+  }
+
+  body .newUserForm ul {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  body .newUserForm ul li {
+    width: 100%;
+    padding: 0 0 .5rem;
+    position: relative;
+  }
+
+  body .newUserForm ul li::before {
+    content: '';
+    display: block;
+    margin: 0 0 4px;
+  }
+
+  body .newUserForm ul li:nth-child(1):before {
+    content: 'Name';
+  }
+
+  body .newUserForm ul li:nth-child(2):before {
+    content: 'Email';
+  }
+
+  body .newUserForm ul li:nth-child(3):before {
+    content: 'Permission';
+  }
+
+  body .newUserRowDelete {
+    top: auto;
+    bottom: 16px;
+  }
+}
+
+@media(max-width:480px) {
+  body .brandSearch {
+    flex-wrap: wrap;
+  }
+
+  body .brandFilter {
+    margin: 0 auto 1rem;
+  }
+
+  body .feedbackSearch .inputWrap {
+    margin: 0 0 1rem 0;
+  }
+}

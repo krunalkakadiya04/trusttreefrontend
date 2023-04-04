@@ -1,0 +1,172 @@
+.Questions .form-select {
+  max-width: 395px;
+}
+
+.question__inner {
+  width: 70%;
+}
+
+.overall-inner .buffalo-img {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overall-inner .buffalo>li:nth-child(2) {
+  text-align: left;
+}
+
+.overall__content .content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+}
+
+.following h6 {
+  margin-bottom: 0;
+}
+
+.overall__content,
+.catalogue-ul-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.overall__content .global__img,
+.catalogue-ul-inner .global__img {
+  min-width: 47px;
+  height: 24px;
+  background: rgba(169, 208, 246, 0.5);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+}
+
+.following>h6>span {
+  margin-right: 12px;
+}
+
+.questionsMarginBottom {
+  margin: 12px 12px 10px 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check__box h6 {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.check__box {
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.optionsInner {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.optionsWrapper {
+  width: 90%;
+}
+
+.optionsDelete {
+  width: 10%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.Sandos-table {
+  padding: 0 20px 0 40px;
+}
+
+.buffalo .small-box {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.modal__popup {
+  margin: 30px 0 0 0
+}
+
+.modalImprove .modal-content {
+  border-radius: 12px;
+  border: none;
+  outline: 0;
+}
+
+.modalImprove .modal-content .modal-header .h4 {
+  color: #101820;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modalImprove .modal-content .modal-header {
+  border-bottom: 0;
+  padding: 1rem 0 2rem 0;
+}
+
+.modalImprove .Experience-btn-modal {
+  align-items: center;
+  gap: 18px;
+}
+
+.check__box h6 {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.check__box {
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.modal__popup .btn-primary.focus,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #164665;
+  border-color: #164665;
+  box-shadow: none !important;
+}
+
+ul.languageInner-modal .d-flex p {
+  color: #292D32;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ul.languageInner-modal {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+.color-grey {
+  color: gray;
+}
+
+.cursor-grab,
+.cursor-grab div {
+  cursor: grab;
+}
+
+.Questions .dropdown .dropdown-menu {
+  max-width: 395px
+}

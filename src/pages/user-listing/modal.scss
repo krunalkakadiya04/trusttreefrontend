@@ -1,0 +1,116 @@
+.commanModal .modal-dialog {
+  max-width: 718px
+}
+
+.commanModal .modal-content {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 32px;
+  border: 0;
+}
+
+.commanModal .modal-body {
+  padding: 0;
+}
+
+.commanModal {
+  text-align: center;
+}
+
+.commanModal .disableImg {
+  margin: 0 0 24px;
+  display: block
+}
+
+.commanModal h2 {
+  margin: 0 0 6px;
+  padding: 0;
+  font-size: var(--font20);
+  font-weight: var(--weight600);
+  line-height: 32px;
+  color: var(--darkColor);
+}
+
+.commanModal p {
+  margin: 0 0 62px;
+  padding: 0;
+  font-size: var(--font20);
+  font-weight: var(--weight500);
+  line-height: 32px;
+  color: var(--greyColor);
+}
+
+.commanModal p strong {
+  font-weight: var(--weight700);
+}
+
+.centerBTN {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.lightBDR {
+  background: var(--white);
+  border: 1px solid var(--bdrColor);
+  color: var(--darkColor);
+  font-size: var(--font16);
+  font-weight: var(--weight600);
+  min-width: 120px;
+}
+
+.lightBDR:hover,
+.lightBDR:active {
+  background: rgba(41, 45, 50, 0.1) !important;
+  border: 1px solid var(--bdrColor) !important;
+  color: #292d32;
+
+}
+
+button.redButton,
+a.redButton {
+  background: var(--redColor);
+  border-color: var(--redColor);
+  min-width: 120px;
+}
+
+button.redButton:hover,
+button.redButton:active,
+a.redButton:hover,
+a.redButton:active {
+  border-color: var(--redColor) !important;
+  background: #e3585d !important;
+  color: var(--white) !important;
+}
+
+button.btnBG,
+a.btnBG {
+  background: var(--primary);
+  border-color: var(--primary);
+  min-width: 120px;
+}
+
+button.btnBG:hover,
+button.btnBG:active,
+a.btnBG:hover,
+a.btnBG:active {
+  background: #3E6E8D !important;
+  color: var(--white) !important;
+  border-color: transparent !important;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+#profileImage {
+  width: 35px;
+  height: 35px;
+  padding: 11px 3px 0px 3px;
+  border-radius: 50%;
+  background: #004D3C;
+  color: #fff;
+  text-align: center;
+}

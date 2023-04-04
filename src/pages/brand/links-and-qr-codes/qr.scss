@@ -1,0 +1,766 @@
+.customSelect.select-link-QR {
+    width: 255px;
+}
+
+.customSelect.select-link-QR-code {
+    width: 300px;
+}
+
+.QR-code-img {
+    margin-top: 25px;
+}
+
+.code-border {
+    border: 1px solid rgba(169, 208, 246, 0.75);
+    border-radius: 12px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding: 32px;
+}
+
+.QR-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.QR-Code-Settlement h5 {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #101820;
+    margin: 0;
+}
+
+.QR-Code-Settlement p {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6B7280;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.QR-Btn {
+    margin-top: 28px;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.QRinput {
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.QRinput>input {
+    width: 100%;
+}
+
+// .form-group button{ color: #164665; background-color: transparent; border: 1px solid #164665;  width: 110px; height: 38px;display: flex;justify-content: center;align-items: center; margin-left: 20px;}
+
+
+
+
+.slide .rateText {
+    font-size: 10px;
+    color: #f00;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.slide .sliderText {
+    font-size: 6px;
+    font-weight: 500;
+    color: #f00;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.circleBox {
+    position: relative;
+    background: #f00;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+}
+.slide.selected .redborderSquare>ul h4.rateText{ margin:6px 0;}
+
+.circleBox { position: relative; background: #f00; width: 150px;height: 150px;  border-radius: 100%;  display: flex; flex-direction: column;  gap: 5px;  align-items: center;  position: relative;}
+// .circleBox .sliderText>svg{position: absolute;top: -10px;width: 100%;height: 100%;left: 50%;transform: translateX(-50%);} 
+/* .circleBox>ul,
+.whiteborderSquare>ul,
+.redborderSquare>ul{position: absolute;top: 0;} */
+.circleBox>ul>li,
+.whiteborderSquare>ul>li {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.slide .barCode {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.redborderSquare .trustreeLogo,
+.whiteborderSquare .trustreeLogo {
+    width: 40px !important;
+}
+
+.redborderSquare>ul>li {
+    width: 35px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+
+.barCode {
+    width: 100%;
+    position: relative;
+}
+
+.barCode>canvas,
+.slide .barCode>canvas,
+.barCode>img,
+.slide .barCode>img {
+    width: 50px !important;
+    margin: 0 auto;
+    height: 50px !important;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logoBarcode {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logoBarcode>img {
+    width: 30px !important;
+}
+
+.whiteborderSquare,
+.redborderSquare {
+    background: #ED1C24;
+    border: 10px solid #e9e9e9;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.redborderSquare {
+    background: #fff;
+    border: 10px solid #ED1C24;
+}
+
+.redborderSquare>h6,
+.mens_QrCode>h6,
+.chatboxQr>ul>h6 {
+    color: #f00 !important;
+}
+
+.mens_QrCode {
+    position: absolute;
+    bottom: 0;
+}
+
+.QrCode>img>.trustreeLogo {
+    width: 50px;
+    height: auto;
+}
+
+.mens_QrCode>ul>li {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mens_QrCode>ul>li>div {
+    width: 50%;
+    text-align: center;
+}
+
+.QrCode {
+    padding: 0 10px;
+}
+
+.QrCode>img>.trustreeLogo,
+.centerQrCode>img>.trustreeLogo {
+    width: 80px;
+    height: 20px;
+}
+
+.centerQrCode {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// .centerQrCode>img{height: 50px;}
+.centerQrCode>canvas {
+    width: 50px !important;
+    height: 50px !important;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.centerQrCode>img>.trustreeLogo {
+    height: auto;
+    width: 50px;
+}
+
+.QrCode>canvas,
+.rectangleQrcode>canvas {
+    width: 50px !important;
+    height: 50px !important;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.chatboxQr {
+    position: absolute;
+    bottom: 10px;
+}
+
+.rectangleBox {
+    background: #FFFFFF;
+    border: 10px solid #ED1C24;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.rectangleBox>ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.rectangleQrcode {
+    width: 70px;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+}
+
+.rectangleQrcode>img {
+    height: auto;
+}
+
+.rect-Flex {
+    width: 100px;
+    text-align: left;
+}
+
+.rect-Flex>div {
+    display: flex;
+    align-items: center;
+}
+
+.rect-Flex>div>img,
+.redborderSquare>ul>li>img {
+    width: 25px !important;
+}
+
+.slide .mens_QrCode .menChat>img {
+    width: 90%;
+}
+
+.rectangleQrcode>img>.trustreeLogo {
+    width: 40px;
+    height: auto;
+}
+
+.rectangleBox>ul {
+    position: relative;
+}
+
+.reactLogo__chickinWorx {
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.reactLogo__chickinWorx>img {
+    width: 100%;
+    border-radius:5px;
+}
+
+.rect-Flex>h6 {
+    color: #f00;
+}
+
+.slide {opacity: .2;}   ///tam
+.item {
+    width: 100%;
+}
+
+.slide.selected {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    transform: scale(1);
+    min-width: 250px;
+}
+
+.slider__QrCode .owl-nav {
+    width: 100%;
+}
+
+.slider__QrCode .owl-nav .owl-prev span,
+.slider__QrCode .owl-nav .owl-next span {
+    font-size: 0;
+}
+
+// .circleBox .sliderText>svg {
+//     position: absolute;
+//     top: -10px;
+//     width: 100%;
+//     height: 100%;
+//     left: 50%;
+//     transform: translateX(-50%);
+// }
+
+// .circleBox .sliderText > svg {position: absolute;top: -10px;width: 100%;height: 100%;left: 50%;transform: translateX(-50%);}
+// .owl-carousel .owl-nav button.owl-next, 
+// .owl-carousel .owl-nav button.owl-prev, 
+// .owl-carousel button.owl-dot {
+// position: absolute;top: 50%;transform: translateY(-50%);font-size: 1rem;
+// background: url(../images/arrowLeft.svg);background-position: left;
+// background-repeat: no-repeat;background-size: cover;left: auto;right: auto;width: 20px;}
+
+// .owl-carousel .owl-nav button.owl-prev{ left:-1rem;}
+
+// .owl-carousel .owl-nav button.owl-next{right: -1rem;left: auto; background: url(../images/arrow-right.svg);
+//     background-position: right;background-repeat: no-repeat;background-size: cover;}
+
+
+/* .slide.selected  .circleBox>ul,
+.slide.selected  .whiteborderSquare>ul,
+.slide.selected  .redborderSquare>ul{position: absolute;top: 0;} */
+.slide.selected .rect-Flex>div>img,
+.slide.selected .redborderSquare>ul>li>img {
+    width: 40px !important;
+}
+
+.slide.selected .circleBox>ul>li,
+.slide.selected .whiteborderSquare>ul>li,
+.slide.selected .redborderSquare>ul>li {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide.selected .circleBox > ul > li>img, .slide.selected .whiteborderSquare > ul > li>img, .slide.selected .redborderSquare > ul > li>img {
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+}
+
+.slide.selected .redborderSquare>ul>li>img {
+   
+    border: 3px solid #fff;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.slide.selected .circleBox {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+// .slide.selected .circleBox .sliderText>svg {
+//     position: absolute;
+//     top: -10px;
+//     width: 100%;
+//     height: 100%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     overflow: visible;
+// }
+
+.slide.selected .barCode>canvas,
+.slide.selected .barCode>img {
+    width: 120px !important;
+    margin: 5px  auto;
+    height: 120px !important;
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.slide.selected .rectangleBox .flex .rectangleQrcode>canvas.barCode {
+    margin: 0 !important;
+    width: 70px !important;
+    height: 70px !important;
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.slide.selected .QrCode>canvas,
+.slide.selected .rectangleQrcode>canvas {
+    width: 120px !important;
+    height: 120px !important;
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+// .slide.selected .rectangleBox .barCode .flex .rectangleQrcode>canvas{width: 100px !important; margin: 0 auto; height: 100px !important;}
+/* .slide.selected .barCode {width: 100%;position: relative;margin-top: 65px;} */
+.slide.selected .mens_QrCode .QrCode>img {
+    width: 70px !important;
+    margin-bottom: 10px;
+}
+
+.slide.selected .mens_QrCode .menChat{
+    text-align:right;
+}
+.slide.selected .mens_QrCode .menChat>img {
+    width: 98%;
+}
+
+.slide.selected .rectangleBox {
+    width: 100%;
+}
+
+.slide.selected .centerQrCode>img {
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.slide.selected .centerQrCode>canvas {
+    height:120px !important;
+    width:120px !important;
+    margin: 0 !important;
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.slide.selected .rectangleQrcode>img>.trustreeLogo {
+    width: 100%;
+    height: auto;
+}
+
+.slide.selected .whiteborderSquare>img>.trustreeLogo {
+    width: 40%;
+    height: auto;
+}
+
+.slide.selected .logoBarcode {
+    position: relative;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide.selected .logoBarcode>img {
+    width: 80px !important;
+}
+
+.slide.selected .rateText {
+    font-size: 18px;
+    color: #f00;
+    font-weight: bold;
+    margin: 0;
+}
+
+.slide.selected .barCodeFTR .sliderText{
+    padding:0;
+}
+.slide.selected .sliderText {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin: 55px 0 10px;
+}
+
+.slide.selected .whiteborderSquare,
+.slide.selected .redborderSquare {
+    background: #ED1C24;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    min-width:300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;    
+}
+.barCodeFTR {
+    padding: 0 0 5px;
+}
+.slide.selected .whiteborderSquare .trustreeLogo,
+.slide.selected .redborderSquare .trustreeLogo {
+    width: 70px !important;
+}
+
+.slide.selected .redborderSquare {
+    background: #FFFFFF;
+    border: 10px solid #ED1C24;
+}
+
+.slide.selected .rectangleBox {
+    background: #FFFFFF;
+    border: 10px solid #ED1C24;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.slide.selected .rect-Flex>div>img {
+    width: 60px;
+}
+
+.slide.selected .rectangleQrcode {
+    width: 30%;
+    text-align: center;
+    padding: 8px 5px 5px 5px;
+}
+
+.slide.selected .rectangleQrcode>img {
+    width: 50px;
+}
+
+.slide.selected .rectangleQrcode>img>.trustreeLogo {
+    width: 80px;
+    height: 25px;
+}
+
+.slide.selected .rect-Flex {
+    width: 50%;
+    text-align: left;
+}
+
+.slide.selected .rect-Flex>div {
+    display: flex;
+    align-items: center;
+}
+.slide.selected .rect-Flex>div h4{ font-size:14px; padding:12px 0 0 ;}
+
+// .slide.selected .rectangleBox>ul{}
+.slide.selected .reactLogo__chickinWorx {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.slide.selected .reactLogo__chickinWorx>img {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+}
+
+.stickerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.slider__QrCode {
+    padding: 0 1rem;
+}
+
+.slide {
+    transform: scale(.5);
+}
+
+// .slide.active{ transform:scale(.5);}
+// .slide.active .barCode {width: 100%;margin-top: 10px;}
+
+.sliderBox {width: 250px;height: 250px;background: transparent;display: flex;justify-content: center;align-items: center;}
+.slider_btn{display: flex; justify-content: center; align-items: center; margin-top: 24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.qr-select .form-select {
+    width: 300px;
+}
+
+.QR-code-img {
+    margin-top: 25px;
+}
+
+.code-border {
+    border: 1px solid rgba(169, 208, 246, 0.75);
+    border-radius: 12px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    padding: 32px;
+}
+
+.QR-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.QR-Code-Settlement h5 {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #101820;
+    margin: 0;
+}
+
+.QR-Code-Settlement p {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6B7280;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.QR-Btn {
+    margin-top: 28px;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.survey-link {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.QRcodeInput {
+    width: 100%;
+    align-items: center;
+}
+
+
+.QRcodeInput .exp-input {
+    width: 75%;
+}
+
+.QRcodeInput .form-group {
+    margin-bottom: 0px;
+}
+
+.QRcodeInput button {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    margin-left: 10px;
+}
+
+.carousel.carousel-slider .control-arrow {
+    padding: 5px;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 0 !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: none !important;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: none !important;
+}
+
+.carousel.carousel-slider .control-arrow {
+    top: 0;
+    color: #fff;
+    font-size: 0px !important;
+    bottom: auto !important;
+    margin-top: 0 !important;
+    padding: 5px;
+}
+
+.carousel .control-next.control-arrow,
+.carousel .control-prev.control-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    background: url(../../../assets/images/arrowLeft.svg) !important;
+    background-position: left;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    left: auto;
+    right: auto;
+    width: 20px;
+    margin: 0 10px;
+}
+
+.carousel .control-next.control-arrow {
+    right: 10px;
+    left: auto;
+    background: url(../../../assets/images/arrow-right.svg) !important;
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+}
+
+.carousel .control-arrow.control-prev {
+    left: 10px;
+}

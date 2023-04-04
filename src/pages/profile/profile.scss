@@ -1,0 +1,243 @@
+/* ==========profile-my-account==== */
+
+.profile-box {
+  border: 1px solid var(--bdrColor);
+  border-radius: var(--Radius12);
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.profile-inner {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 48px 0px 0px 0px;
+  text-align: center;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+}
+
+.edit-profile {
+  margin: 48px auto;
+  position: relative;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  // display: flex;
+  // justify-content: center;
+}
+
+.profile-inner .profile-name {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 45px;
+  color: #292d32;
+  margin: 24px 0px 16px 0px;
+}
+
+.profile-inner>h6 {
+  padding-bottom: 10px;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #292d32;
+}
+
+.profile-btn>a {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 17px;
+  width: 200px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-btn>button {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 17px;
+  width: 200px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-btn {
+  padding: 38px 0px 32px 0px;
+  margin: 0 auto;
+  max-width: 200px;
+}
+// .profile-btn>button{margin-bottom: 10px}
+
+a.edit-data {
+  // box-shadow: 0px 1px 2px rgba(169,208,246, 25%);
+  border-radius: 12px;
+  background: #164665;
+  color: #fff;
+  margin: 16px auto;
+}
+
+button.edit-data {
+  // box-shadow: 0px 1px 2px rgba(169,208,246, 25%);
+  border-radius: 12px;
+  background: #164665;
+  color: #fff;
+  margin: 16px auto;
+}
+
+button.edit-data:hover {
+  background-color: #3e6e8d;
+}
+
+button.edit-data:active {
+  background-color: #3e6e8d !important;
+}
+
+
+a.change-passwor {
+  background: #ffffff;
+  border: 1px solid rgba(169, 208, 246, 0.75);
+  // box-shadow: 0px 1px 2px rgba(169 208 246 / 25%);
+  border-radius: 12px;
+  color: #292d32;
+  transition: all 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+a.change-passwor:hover {
+  background: #164665;
+  color: #fff;
+}
+
+.gap{gap: 10px;}
+
+button.change-passwor {
+  background: #ffffff;
+  border: 1px solid rgba(169, 208, 246, 0.75);
+  // box-shadow: 0px 1px 2px rgba(169 208 246 / 25%);
+  border-radius: 12px;
+  color: #292d32;
+  transition: all 0.5s ease-in-out;
+  // margin: 0 auto;
+}
+
+button.change-passwor:hover {
+  border: 1px solid rgba(169, 208, 246, 0.75);
+  opacity: 1;
+  color: #292d32;
+  /* background-color: transparent; */
+  background: linear-gradient(0deg,
+      rgba(41, 45, 50, 0.1),
+      rgba(41, 45, 50, 0.1));
+  border: 1px solid rgba(169, 208, 246, 0.75);
+}
+
+button.change-passwor:active {
+  border: 1px solid rgba(169, 208, 246, 0.75) !important;
+  opacity: 1 !important;
+  color: #292d32 !important;
+  background: linear-gradient(0deg,
+      rgba(41, 45, 50, 0.1),
+      rgba(41, 45, 50, 0.1)) !important;
+  border: 1px solid rgba(169, 208, 246, 0.75) !important;
+}
+
+
+
+.modal-wpr-inner .modal-content {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+/* ================edit-profile====== */
+
+.profile-form {
+  padding: 0px 48px;
+}
+
+.text-profile {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #292d32;
+  margin-bottom: 0.5rem;
+}
+
+.input-social-media {
+  margin: 15px 0px;
+  margin-left: 40px;
+}
+
+.input-social-media input {
+  width: 70%;
+}
+
+.input-box-profile::placeholder {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #292d32;
+}
+
+.change-img {
+  position: absolute;
+  bottom: 10px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+span.form-control-feedback {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(50%);
+  z-index: 99;
+}
+
+.profile-form h3 {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #292d32;
+  text-align: center;
+  padding: 32px 0px 48px 0px;
+}
+
+// .btn:hover {
+//   background-color: #3e6e8d;
+//   border : #3E6E8D
+// }
+// .btn:active {
+//   background-color: red;
+//   border : #3E6E8D
+// }
